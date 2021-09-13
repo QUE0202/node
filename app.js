@@ -7,7 +7,11 @@ app.get('/', function(req, res) {
 
 app.listen(3000, function() {
   console.log('Example app listening on port 3000!');
+
   var express = require('express');
 var app = express();
+
+exports.area = function(width) { return width * width; };
+exports.perimeter = function(width) { return 4 * width; };
 
 });
